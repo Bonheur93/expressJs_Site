@@ -5,17 +5,17 @@ const port = 8100;
 
 app.get ('/', (req, res) =>{
    
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/view/index.html");
 
 });
 app.get ('/pageOne.html', (req, res) =>{
   
-     res.sendFile(__dirname + "/pageOne.html");
+     res.sendFile(__dirname + "/view/pageOne.html");
  
  });
  app.get ('/pageTwo.html', (req, res) =>{
    
-     res.sendFile(__dirname + "/pageTwo.html");
+     res.sendFile(__dirname + "/view/pageTwo.html");
  
  });
 app.listen(port, () => {
