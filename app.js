@@ -2,6 +2,7 @@ const express = require ('express');
 
 const app = express();
 const port = 8100;
+const title = "Node.js Bonheur";
 
 app.set('view engine', 'ejs');
 app.set("views", "./view" )
@@ -13,7 +14,7 @@ app.get ('/', (req, res) =>{
 });
 app.get ('/pageOne', (req, res) =>{
   
-    res.render("pageOne");
+    res.render("pageOne", {title});
  
  });
  app.get ('/pageTwo', (req, res) =>{
