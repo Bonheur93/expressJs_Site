@@ -3,19 +3,22 @@ const express = require ('express');
 const app = express();
 const port = 8100;
 
+app.set('view engine', 'ejs');
+app.set("views", "./view" )
+
 app.get ('/', (req, res) =>{
    
-    res.sendFile(__dirname + "/view/index.html");
+    res.render("index");
 
 });
-app.get ('/pageOne.html', (req, res) =>{
+app.get ('/pageOne', (req, res) =>{
   
-     res.sendFile(__dirname + "/view/pageOne.html");
+    res.render("pageOne");
  
  });
- app.get ('/pageTwo.html', (req, res) =>{
+ app.get ('/pageTwo', (req, res) =>{
    
-     res.sendFile(__dirname + "/view/pageTwo.html");
+    res.render("pageTwo");
  
  });
 app.listen(port, () => {
