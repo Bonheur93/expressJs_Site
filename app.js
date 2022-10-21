@@ -5,7 +5,7 @@ const port = 8100;
 const title = "Node.js Bonheur";
 
 app.set('view engine', 'ejs');
-// app.set("views", "view" )
+
 
 app.get ('/', (req, res) =>{
    
