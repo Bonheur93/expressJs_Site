@@ -12,14 +12,14 @@ app.get ('/', (req, res) =>{
     res.render("index");
 
 });
-app.get ('/Project', (req, res) =>{
+app.get ('/project', (req, res) =>{
   
-    res.render("Project", {title});
+    res.render("project", {title});
  
  });
- app.get ('/About', (req, res) =>{
+ app.get ('/about', (req, res) =>{
    
-    res.render("About");
+    res.render("about");
  
  });
 app.listen(port, () => {
