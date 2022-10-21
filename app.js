@@ -5,21 +5,21 @@ const port = 8100;
 const title = "Node.js Bonheur";
 
 app.set('view engine', 'ejs');
-app.set("views", "./view" )
+// app.set("views", "view" )
 
 app.get ('/', (req, res) =>{
    
     res.render("index");
 
 });
-app.get ('/pageOne', (req, res) =>{
+app.get ('/Project', (req, res) =>{
   
-    res.render("pageOne", {title});
+    res.render("Project", {title});
  
  });
- app.get ('/pageTwo', (req, res) =>{
+ app.get ('/About', (req, res) =>{
    
-    res.render("pageTwo");
+    res.render("About");
  
  });
 app.listen(port, () => {
